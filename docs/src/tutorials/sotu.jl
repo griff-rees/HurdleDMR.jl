@@ -205,5 +205,3 @@ function pd_to_df(df_pd)
     colnames = map(Symbol, df_pd.columns)
     df = DataFrame(Any[Array(df_pd[c].values) for c in colnames], colnames)
 end
-
-covarsdf, counts, terms = loadsoturet(cache=false)
